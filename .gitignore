@@ -1,0 +1,19 @@
+# This repository only publishes the encrypted reader and public instructions.
+*
+!.gitignore
+!README.md
+!encrypted-notes.html
+!encrypted-notes.json
+!decrypt.mjs
+
+# Defense in depth: never stage plaintexts, credentials or local build files.
+private/
+build/
+*.key
+*.pem
+*.secret
+*.password
+password*
+plaintext*
+*.md~
+.env*
